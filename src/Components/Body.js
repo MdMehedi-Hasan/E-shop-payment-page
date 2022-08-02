@@ -1,19 +1,29 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
-import image from './Assets/images/1ph7yc1i1vqqgwpxegw5.webp'
+import paypal from './Assets/images/Paypal-logo-500x281.png'
+import visa from './Assets/images/visa-logo-800x450.webp'
+import master from './Assets/images/ca0c7039ddcf224cb6b075cb59e4677e.png'
+import maestro from './Assets/images/Maestro_2016.svg.png'
+import discover from './Assets/images/Discover-logo.png'
+import ideal from './Assets/images/IDEAL_Logo.png'
+import inpost from './Assets/images/inpost-logo-F04BCA29D0-seeklogo.com.png'
+import dpd from './Assets/images/2560px-DPD_logo_(2015).svg.png'
+import dhl from './Assets/images/DHL-Emblem.png'
+import fedex from './Assets/images/SFJxCXKMZihnZsVnn3LoEk.jpg'
+import model1 from './Assets/images/106852801-side-view-of-smiling-man-in-linen-white-shirt-isolated-on-grey-background.webp'
+import model2 from './Assets/images/male-models-marlon.webp'
 
 const Body = () => {
     return (
-        <div className='mx-16'>
-            <div className='flex justify-between'><span>Shipping and Payment</span><div className='flex items-center'><span><Icon icon="ant-design:shopping-cart-outlined" /></span><span className='w-20 border bg-slate-500 border-slate-500 border-rounded'></span><span><Icon icon="fa:truck" /></span></div></div>
-            <section className='grid grid-cols-3'>
+        <div className='mx-10'>
+            <div className='flex justify-between'><span className='font-bold my-10'>Shipping and Payment</span><div className='flex items-center'><span className='border rounded-full p-2 border-success'><Icon icon="ant-design:shopping-cart-outlined" /></span><span className='w-16 border bg-slate-500 border-slate-500 border-rounded mx-3'></span><span className='border rounded-full p-2 border-success bg-success text-white'><Icon icon="carbon:delivery-truck" hFlip={true} /></span></div></div>
+            <section className='grid grid-cols-3 gap-10'>
                 <div>
                     <div>
-                        <button className="btn btn-success rounded-full text-white">LOG IN</button><button className="btn btn-outline rounded-full">SIGN UP </button>
+                        <button className="btn btn-success rounded-full text-white px-10">LOG IN</button><button className="btn btn-outline rounded-full px-10 ml-5">SIGN UP </button>
                     </div>
-                    <h4>Shipping information</h4>
+                    <h4 className='mt-8 mb-4'>Shipping information</h4>
                     <form action="" className='grid grid-cols-2 gap-4'>
-                        {/* <caption>Shipping information</caption> */}
                         <input className="border rounded-full px-5 py-2" type="Email" placeholder='Email' /><input className="border rounded-full px-5 py-2" type="text" placeholder='Address' /><input className="border rounded-full px-5 py-2" type="text" placeholder='First name' /><input className="border rounded-full px-5 py-2" type="text" placeholder='City' /><input className="border rounded-full px-5 py-2" type="text" placeholder='Last name' /><input className="border rounded-full px-5 py-2" type="number" placeholder='Postal Code / ZIP' /><input className="border rounded-full px-5 py-2" type="phone" placeholder='Phone number' />
                         <select className="border rounded-full px-5 py-2" id="country" name="country">
                             <option>Poland</option>
@@ -274,63 +284,63 @@ const Body = () => {
                 </div>
                 <div>
                     <div>
-                        <h4>Payment method</h4>
+                        <h4 className='mb-4'>Payment method</h4>
                         <div className='grid grid-cols-3 gap-2 '>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a >
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={paypal} alt="" className='w-10' /></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={visa} alt="" className='w-10' /></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={master} alt="" className='w-10' /></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={maestro} alt="" className='w-10' /></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={discover} alt="" className='w-10' /></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={ideal} alt="" className='w-10' /></a >
                         </div>
                     </div>
                     <div>
-                        <h4>Delivery method</h4>
-                        <div className='grid grid-cols-3 gap-2 '>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a>
-                            <a href='/' className="btn btn-outline rounded-full"><img src={image} alt="" className='w-10' /></a >
+                        <h4 className='mb-4 mt-8'>Delivery method</h4>
+                        <div className='grid grid-cols-2 gap-2 '>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={inpost} alt="" className='w-10' /><span>$20.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={dpd} alt="" className='w-10' /><span>$12.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={dhl} alt="" className='w-10' /><span>$15.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={fedex} alt="" className='w-10' /><span>$10.00</span></a>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <h4>Your cart</h4>
-                    <div className='flex items-center'>
-                        <div className="avatar placeholder">
-                            <div className="bg-neutral-focus text-neutral-content rounded-full w-16">
-                                <span className="text-3xl">K</span>
+                    <div className='w-10/12'>
+                        <h4 className='mb-4 ml-6'>Your cart</h4>
+                        <div className='flex items-center mb-5 justify-evenly'>
+                            <div className="avatar placeholder">
+                                <div className="bg-neutral-focus text-neutral-content rounded-full w-12">
+                                <img src={model1} alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h3>T-shirt <br /> Summer Vibes</h3>
-                            <small>#261311</small>
-                        </div>
-                        <b>$89.99</b>
-                    </div>
-                    <div className='flex items-center'>
-                        <div className="avatar placeholder">
-                            <div className="bg-neutral-focus text-neutral-content rounded-full w-16">
-                                <span className="text-3xl">K</span>
+                            <div>
+                                <h3>T-shirt <br /> Summer Vibes</h3>
+                                <small>#261311</small>
                             </div>
+                            <b>$89.99</b>
                         </div>
-                        <div>
-                            <h3>T-shirt <br /> Summer Vibes</h3>
-                            <small>#261311</small>
+                        <div className='flex items-center justify-evenly'>
+                            <div className="avatar placeholder">
+                                <div className="bg-neutral-focus text-neutral-content rounded-full w-12">
+                                    <img src={model2} alt="" />
+                                </div>
+                            </div>
+                            <div>
+                                <h3>T-shirt <br /> Summer Vibes</h3>
+                                <small>#261311</small>
+                            </div>
+                            <b>$89.99</b>
                         </div>
-                        <b>$89.99</b>
+                        <div className='border rounded-full w-8/12 flex justify-evenly bg-gray-100 my-10 mx-auto py-2'><span>Total cost</span> <b>$159.98</b></div>
+                        <div className='flex items-center justify-center mb-10'><Icon icon="carbon:delivery-truck" /><p className='ml-5'>You are $30.02 away <br /> from the shipping!</p></div>
                     </div>
-                    <div><span>Total cost</span> <b>$159.98</b></div>
-                    <div><Icon icon="fa:truck" hFlip={true} /><p>You are $30.02 from the shipping!</p></div>
                 </div>
             </section>
-            <div className='flex justify-between'>
-                <div><span>Back</span></div>
+            <div className='flex justify-between items-center'>
+                <a href='/' className='flex justify-between items-center'><Icon icon="gg:arrow-long-left" /><span className='ml-4'>Back</span></a>
                 <div>
-                    <button className="btn btn-outline">Button</button>
-                    <button className="btn btn-success">Button</button>
+                    <button className="btn btn-outline px-12  rounded-full">CONTINUE SHOPPING</button>
+                    <button className="btn btn-success px-12  rounded-full ml-5 text-white">PROCEED TO PAYMENT</button>
                 </div>
             </div>
         </div>
