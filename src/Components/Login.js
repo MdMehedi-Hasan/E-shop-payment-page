@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import './Custom.css'
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 import { useNavigate } from "react-router-dom";
@@ -25,7 +24,7 @@ const Login = () => {
         <div className='ml-8'>
             <div className="hero min-h-screen">
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
-                    <div className="card-body bg-cstm">
+                    <div className="card-body">
                         <h3 className='text-center text-2xl font-semibold'>LOG IN</h3>
                         <div className="form-control">
                             <label className="label">
