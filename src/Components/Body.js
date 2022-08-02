@@ -12,15 +12,16 @@ import dhl from './Assets/images/DHL-Emblem.png'
 import fedex from './Assets/images/SFJxCXKMZihnZsVnn3LoEk.jpg'
 import model1 from './Assets/images/106852801-side-view-of-smiling-man-in-linen-white-shirt-isolated-on-grey-background.webp'
 import model2 from './Assets/images/male-models-marlon.webp'
+import { Link } from "react-router-dom";
 
 const Body = () => {
     return (
         <div className='mx-10'>
-            <div className='flex justify-between'><span className='font-bold my-10'>Shipping and Payment</span><div className='flex items-center'><span className='border rounded-full p-2 border-success'><Icon icon="ant-design:shopping-cart-outlined" /></span><span className='w-16 border bg-slate-500 border-slate-500 border-rounded mx-3'></span><span className='border rounded-full p-2 border-success bg-success text-white'><Icon icon="carbon:delivery-truck" hFlip={true} /></span></div></div>
+            <div className='flex justify-between'><span className='font-bold my-10'>Shipping and Payment</span><div className='flex items-center'><span className='border rounded-full p-2 border-success'><Icon icon="ant-design:shopping-cart-outlined" /></span><span className='w-16 border-t bg-slate-300 border-slate-300 border-rounded mx-3'></span><span className='border rounded-full p-2 border-success bg-success text-white'><Icon icon="carbon:delivery-truck" hFlip={true} /></span></div></div>
             <section className='grid grid-cols-3 gap-10'>
                 <div>
                     <div>
-                        <button className="btn btn-success rounded-full text-white px-10">LOG IN</button><button className="btn btn-outline rounded-full px-10 ml-5">SIGN UP </button>
+                        <Link to="/login" className="btn btn-success rounded-full text-white px-10">LOG IN</Link><Link to="/signup" className="btn btn-outline rounded-full px-10 ml-5">SIGN UP </Link>
                     </div>
                     <h4 className='mt-8 mb-4'>Shipping information</h4>
                     <form action="" className='grid grid-cols-2 gap-4'>
@@ -285,7 +286,7 @@ const Body = () => {
                 <div>
                     <div>
                         <h4 className='mb-4'>Payment method</h4>
-                        <div className='grid grid-cols-3 gap-2 '>
+                        <div className='grid grid-cols-3 gap-4 '>
                             <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={paypal} alt="" className='w-10' /></a>
                             <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={visa} alt="" className='w-10' /></a>
                             <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200"><img src={master} alt="" className='w-10' /></a>
@@ -296,11 +297,11 @@ const Body = () => {
                     </div>
                     <div>
                         <h4 className='mb-4 mt-8'>Delivery method</h4>
-                        <div className='grid grid-cols-2 gap-2 '>
-                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={inpost} alt="" className='w-10' /><span>$20.00</span></a>
-                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={dpd} alt="" className='w-10' /><span>$12.00</span></a>
-                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={dhl} alt="" className='w-10' /><span>$15.00</span></a>
-                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black"><img src={fedex} alt="" className='w-10' /><span>$10.00</span></a>
+                        <div className='grid grid-cols-2 gap-4 '>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black flex justify-around"><img src={inpost} alt="" className='w-10' /><span>$20.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black flex justify-around"><img src={dpd} alt="" className='w-10' /><span>$12.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black flex justify-around"><img src={dhl} alt="" className='w-10' /><span>$15.00</span></a>
+                            <a href='/' className="btn btn-outline rounded-full hover:bg-white hover:border-orange-400 border-slate-200 hover:text-black flex justify-around"><img src={fedex} alt="" className='w-10' /><span>$10.00</span></a>
                         </div>
                     </div>
                 </div>
