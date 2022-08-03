@@ -16,4 +16,4 @@ Since it is a one page project it is tried to keep less components to make thing
 
 ## How to run the code
 
-You can simply clone the code from github & then download node_modules file for the project. Then go to the directory where you downloaded the code from cmd. Afterwards npm start to run the code locally in your computer or you can click on the link [click here](e-shop21.netlify.app) to visit live site.
+You can simply clone the code from github & then download node_modules file for the project. Then go to the directory where you downloaded the code from cmd. Afterwards npm start to run the code locally in your computer or you can click on the link [click here](https://e-shop21.netlify.app/) to visit live site.
